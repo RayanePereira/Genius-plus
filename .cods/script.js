@@ -9,7 +9,7 @@ let scores = 0;
 //4 - pink
 //5 - orange
 //6 - purple
-//7 - aqua
+//7 - aquamarine
 
 const blue = document.querySelector('.blue');
 const yellow = document.querySelector('.yellow');
