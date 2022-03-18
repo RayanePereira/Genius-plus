@@ -40,5 +40,3 @@ let lightColor = (element, number) => {
         element.classList.remove('selected');
     })
 }
-
-let checkOrder = () => 
