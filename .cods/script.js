@@ -40,3 +40,9 @@ let lightColor = (element, number) => {
         element.classList.remove('selected');
     })
 }
+
+let checkOrder = () => {
+for(let i in clickedOrder) {
+if()
+}
+}
