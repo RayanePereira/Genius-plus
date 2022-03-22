@@ -44,5 +44,5 @@ let lightColor = (element, number) => {
 let checkOrder = () => {
 for(let i in clickedOrder) {
 if()
-}
+   }
 }
