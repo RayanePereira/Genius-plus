@@ -20,6 +20,8 @@ const orange = document.querySelector('.orange');
 const purple = document.querySelector('.purple');
 const aquamarine = document.querySelector('.aquamarine');
 
+
+//Cria a ordem aleatória das cores do jogo
 let shuffleOder = () => {
     let colorOrder = Math.floor(Math.random() *8);
     order[order.length] = colorOrder;
@@ -31,6 +33,8 @@ let shuffleOder = () => {
     }
 }
 
+
+//Faz acender a próxima cor 
 let lightColor = (element, number) => {
     number = number = 500;
     setTimeout(() => {
@@ -41,6 +45,8 @@ let lightColor = (element, number) => {
     })
 }
 
+
+//Verifica se os botões foram acionados e clicados na cor correta
 let checkOrder = () => {
     for(let i in clickedOrder) {
         if(clickedOrder [i] != order[i]) {
@@ -49,6 +55,19 @@ let checkOrder = () => {
         }
    }
    if(clickedOrder.length == order.length) {
-       alert('Pontuação: $(score')
+       alert('Pontuação: ${score}\nVocê acertou!!! Vamos iniciar o próximo nível!');
+       nextLevel();
    }
+}
+
+//Função para o usuário clicar
+let click = (color) => {
+    clickedOrder[clickedOrder.length] = color;
+    createColorElement(color).classList.add('selected');
+
+    setTimeout( () => {
+        createColorElement(color).classList.remove('selected');
+    })
+
+    checkOrder();
 }
