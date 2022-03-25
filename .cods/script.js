@@ -76,5 +76,5 @@ let click = (color) => {
 let createColorElement = (color) => {
     if(color == 0) {
         return green;
-    } else 
+    }
 }
