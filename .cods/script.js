@@ -71,3 +71,10 @@ let click = (color) => {
 
     checkOrder();
 }
+
+//Função que faz retornar a cor de antes
+let createColorElement = (color) => {
+    if(color == 0) {
+        return green;
+    } else 
+}
