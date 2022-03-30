@@ -75,10 +75,22 @@ let click = (color) => {
 //Função que faz retornar a cor de antes
 let createColorElement = (color) => {
     if(color == 0) {
-        return green;
+        return blue;
     } else if(color == 1) {
-        return red;
-    } else if(color == 2) {
         return yellow;
+    } else if(color == 2) {
+        return red;
+    } else if(color == 3) {
+        return green;
+    } else if(color == 4) {
+        return pink;
+    } else if(color == 5) {
+        return pink;
+    } else if(color == 6) {
+        return orange;
+    } else if(color == 7) {
+        return purple;
+    } else if(color == 8) {
+        return aquamarine;
     }
 }
