@@ -76,5 +76,9 @@ let click = (color) => {
 let createColorElement = (color) => {
     if(color == 0) {
         return green;
+    } else if(color == 1) {
+        return red;
+    } else if(color == 2) {
+        return yellow;
     }
 }
