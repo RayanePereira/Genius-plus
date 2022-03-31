@@ -94,3 +94,26 @@ let createColorElement = (color) => {
         return aquamarine;
     }
 }
+
+//função para o p´rximo nívelo do jogo
+let nextLevel = () => {
+    score++;
+    shuffleOder();
+}
+
+//Função para game over hehe
+let gameOver = () => {
+    alert('Pontuação: ${score}!\nVocê perdeu o jogo! Tente novamente!\nClique em Ok para iniciar um novo jogo');
+    order = [];
+    clickedOrder = [];
+
+    playGame();
+}
+
+let playGame = () => {
+    alert('Seja bem vindo ao Genius Plus da Ray! Iniciando o novo jogo!!!');
+    score = 0;
+
+    nextLevel();
+}
+
