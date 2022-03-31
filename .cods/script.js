@@ -117,3 +117,4 @@ let playGame = () => {
     nextLevel();
 }
 
+green.addEventListener('click', click(0));
