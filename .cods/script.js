@@ -119,13 +119,9 @@ let playGame = () => {
 
 blue.addEventListener('click', click(0));
 yellow.addEventListener('click', click(1));
-
-
-//0 - blue
-//1 - yellow
-//2 - red
-//3 - green
-//4 - pink
-//5 - orange
-//6 - purple
-//7 - aquamarine
+red.addEventListener('click', click(2));
+green.addEventListener('click', click(3));
+pink.addEventListener('click', click(4));
+orange.addEventListener('click', click(5));
+purple.addEventListener('click', click(6));
+aquamarine.addEventListener('click', click(7));
