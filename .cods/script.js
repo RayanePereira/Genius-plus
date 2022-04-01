@@ -117,4 +117,15 @@ let playGame = () => {
     nextLevel();
 }
 
-green.addEventListener('click', click(0));
+blue.addEventListener('click', click(0));
+yellow.addEventListener('click', click(1));
+
+
+//0 - blue
+//1 - yellow
+//2 - red
+//3 - green
+//4 - pink
+//5 - orange
+//6 - purple
+//7 - aquamarine
